@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
-
+    <link rel="stylesheet" href="style.css">
     <style>
       /* Don't touch this START */
 
@@ -48,9 +48,6 @@
 
       /* Grid within Grid Section */
       /* Practice re-using classes */
-
-      .two-column-grid {
-      }
     </style>
   </head>
   <body>
@@ -96,12 +93,12 @@
     <div>
       <h2>Grid within Grid #1</h2>
       <div class="container two-column-grid">
-        <div class="box">
+        <div class="box box-1">
           <div class="inner-box"></div>
           <div class="inner-box"></div>
           <div class="inner-box"></div>
         </div>
-        <div class="box">
+        <div class="box box-2">
           <div class="inner-box"></div>
           <div class="inner-box"></div>
           <div class="inner-box"></div>
@@ -112,14 +109,14 @@
     </div>
     <div>
       <h2>Grid within Grid #2 (Expansion)</h2>
-      <div class="container">
-        <div class="box">
+      <div class="container grid-within-grid-2">
+        <div class="box box-3">
           <div class="inner-box"></div>
         </div>
-        <div class="box expand">
+        <div class="box box-4 expand">
           <div class="inner-box width-sm"></div>
         </div>
-        <div class="box">
+        <div class="box box-5">
           <div class="inner-box"></div>
           <div class="inner-box"></div>
           <div class="inner-box"></div>
