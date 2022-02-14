@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
-    <link rel="stylesheet" href="style.css">
+
     <style>
       /* Don't touch this START */
 
@@ -31,21 +31,91 @@
 
       /* Write CSS Here */
 
-      .three-column-grid {
-      }
+      .two-column-grid__expand-two {
+    display: grid;
+    grid-template: 
+    "logo box" 1fr /
+    300px 1fr;
+    gap: 5px;
+  }
+.logo {
+    grid-area: logo;
+    min-width: 40px;
+    min-height: 40px;
+    border: 2px dotted lightgreen;
+}
+.three-column-grid {
+    display: grid;
+    grid-template: 
+    "box box box" 1fr /
+    1fr 1fr 1fr;
+    gap: 5px;
+}
+.three-column-grid__expand-two {
+    display: grid;
+    grid-template: 
+    "box box box" 1fr /
+    50px 1fr 50px;
+    gap: 5px;
+}
+.five-column-grid {
+    display: grid;
+    grid-template: 
+    "box box box box box" 1fr /
+    1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+.center-grid {
+    display: grid;
+    place-items: center;
+}
+.two-column-grid {
+    display: grid;
+    grid-template: 
+    "box-1 box-2" 1fr /
+    1fr 1fr;
+    gap: 5px;
+}
+.box-1 {
+    grid-area: box-1;
 
-      .three-column-grid__expand-two {
-      }
+    display: grid;
+    grid-template: 
+    "inner-box inner-box inner-box" 1fr /
+    1fr 1fr 1fr;
+    gap: 5px;
+}
+.box-2 {
+    grid-area: box-2;
 
-      .five-column-grid {
-      }
+    display: grid;
+    grid-template: 
+    "inner-box inner-box inner-box inner-box inner-box" 1fr /
+    1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+.grid-within-grid-2 {
+    display: grid;
+    grid-template: 
+    "box-3 box-4 box-5" 1fr /
+    60px 1fr 200px;
+    gap: 5px;
+}
+.box-3 {
+    grid-area: box-3;
+}
+.box-4 {
+    grid-area: box-4;
+}
+.box-5 {
+    grid-area: box-5;
 
-      .center-grid {
-      }
-
-      .centered {
-      }
-
+    display: grid;
+    grid-template: 
+    "inner-box inner-box inner-box" 1fr /
+    1fr 1fr 1fr;
+    gap: 5px;
+}
       /* Grid within Grid Section */
       /* Practice re-using classes */
     </style>
