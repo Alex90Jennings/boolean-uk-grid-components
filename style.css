@@ -65,7 +65,7 @@
     display: grid;
     grid-template: 
     "box-3 box-4 box-5" 1fr /
-    60px 1fr 60px;
+    60px 1fr 200px;
     gap: 5px;
 }
 .box-3 {
